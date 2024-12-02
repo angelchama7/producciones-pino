@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<title>Catalogo</title>
+ 
+<meta charset="UTF-8">
+<link rel="stylesheet" href="css/style.css">
+     <title>Productos</title>
+     </head>
+     <body>
+
+          <body background="Producciones/img/fondo.jpg">
+               <body background ="fondo.jpg">
+
+     <div class="zoom-efect">    
+          <div class="container">
+           <h1><font color="white">CATALOGO DE PRODUCTOS🛍️
+           </font></h1>
+           <h3 id="contador">0 productos en su carrito: $0</h3>
+           <h4></h4>
+           <p></p>
+           <button onclick="Aviso()">comprar</button>
+
+           
+           
+<button class="button" data-text="Awesome"><a href="../Proyecto.html"><span class="actual-text">&nbsp;Regresar a la Pagina Principal&nbsp;</span>
+    <span aria-hidden="true" class="hover-text">&nbsp;Regresar a la Pagina Principal&nbsp;</span></button></a>
+</button>
+
+
+
+          <div class="product">
+             <h2><font color="gray">GORRA🧢 "LOGO PINO"</font></h2>
+             <img src="img/gorra-pino.jpg">
+             <p></p>
+             <p><font color="white">Precio:$150.00 </font></p>
+             <button id="boton1">agregar al carrito</button>
+             
+            </div>
+
+<div class="product">
+             <h2><font color="gray">CAMISETA👕 "LOGO PINO"</font></h2>
+             <img src="img/camisa .jpg">
+             <p></p>
+             <p><font color="white">Precio:$200.00 </font></p>
+             <button id="boton2">agregar al carrito</button>
+             
+            </div>
+
+<div class="product">
+             <h2><font color="gray">TAZA🍵 "LOGO PINO"</font></h2>
+             <img src="img/taza pino.jpg">
+             <p></p>
+             <p><font color="white">Precio:$75.00 </font></p>
+             <button id="boton3">agregar al carrito</button>
+             
+            </div>
+
+
+
+ </div>
+</div>
+<script>
+ 
+ var boton = document.getElementById('boton');
+ var boton1 = document.getElementById('boton1');
+ var boton2 = document.getElementById('boton2');
+ var boton3 = document.getElementById('boton3');
+
+var clics = 0;
+var total = 0;
+
+boton1.addEventListener('click', function() {
+clics++;
+total += 150.00;
+contador.textContent = clics + " productos en tu carrito: $" + total;
+});
+
+boton2.addEventListener('click', function() {
+clics++;
+total += 200.00;
+contador.textContent = clics + " productos en tu carrito: $" + total;
+});
+
+boton3.addEventListener('click', function() {
+clics++;
+total += 75.00;
+contador.textContent = clics + " productos en tu carrito: $" + total;
+});
+
+
+
+function  Aviso(){
+        alert("GRACIAS POR TU COMPRA, ERES GRANDE😎");
+                 }
+
+
+  </script>
+    
+</body>
+</html>
